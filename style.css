@@ -1,4 +1,39 @@
+[id="theme"]
+{
+    border-radius: 5px !important;
+    background: rgba(0,0,0,0.2) !important;
+    border: none !important;
+    padding: 10px !important;
+    box-shadow: 0px 3px 5px -4px #000;
+}
+[id="convert"]
+{
+    background: rgba(0,0,0,0.2) !important;
+    border-radius: 5px !important;
+    border: none !important;
+    box-shadow: 0px 2px 4px -3px #000;
+}
 *
 {
-    font-family: Montserrat;
+    font-family: Montserrat !important;
+}
+h1
+{
+    font-weight: 900;
+    font-size: 3rem;
+    width: 50%;
+    background: rgba(0,0,0,0.2);
+    padding: 15px !important;
+    border-radius: 15px !important;
+    box-shadow: 0px 5px 15px -10px #000;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+h5
+{
+    position: absolute;
+    bottom:0;
+    left:25%;
+    right:25%;
+    width: 50%;
 }
