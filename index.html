@@ -21,7 +21,6 @@ function extractMeta(fileContent) {
 function parseOldMeta(fileContent) {
     const meta = fileContent.split("\n")[0];
     const metaData = meta.substring(meta.lastIndexOf("//META") + 6, meta.lastIndexOf("*//"));
-    const parsed = Utilities.testJSON(metaData);
     if (!parsed) throw new Error("META could not be parsed.");
     if (!parsed.name) throw new Error("META missing name data.");
     return parsed;
