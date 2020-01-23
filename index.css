@@ -1,10 +1,12 @@
-body {
+body 
+{
     background-color: #7289DA;
     color: white;
     text-align: center;
 }
 
-#theme, #convert {
+#theme, #convert 
+{
     text-decoration: none;
     color: #fff;
     font-family: 'Whitney', sans-serif;
