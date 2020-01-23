@@ -1,3 +1,24 @@
+body {
+    background-color: #7289DA;
+    color: white;
+    text-align: center;
+}
+
+#theme, #convert {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Whitney', sans-serif;
+    font-size: 13px;
+    opacity: 0.8;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 [id="theme"]
 {
     border-radius: 5px !important;
@@ -6,6 +27,7 @@
     padding: 10px !important;
     box-shadow: 0px 3px 5px -4px #000;
 }
+
 [id="convert"]
 {
     background: rgba(0,0,0,0.2) !important;
@@ -13,27 +35,42 @@
     border: none !important;
     box-shadow: 0px 2px 4px -3px #000;
 }
+
 *
 {
-    font-family: Montserrat !important;
+    font-family: 'Montserrat' !important;
 }
+
 h1
 {
     font-weight: 900;
     font-size: 3rem;
     width: 50%;
     background: rgba(0,0,0,0.2);
-    padding: 15px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
     border-radius: 15px !important;
     box-shadow: 0px 5px 15px -10px #000;
     margin-left: 25%;
     margin-right: 25%;
 }
+
 h5
 {
     position: absolute;
-    bottom:0;
-    left:25%;
-    right:25%;
-    width: 50%;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+    width:  50%;
+}
+
+#convert:hover
+{
+    opacity: 1;
+}
+
+a 
+{
+    color: white;
+    text-decoration: underline;
 }
