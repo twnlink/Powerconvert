@@ -71,7 +71,6 @@ function readTheme() {
     "version": "${themeMeta['version'].trim()}",
     "author": "${themeMeta['author'].trim()}",
     "theme": "theme.css",
-    "consent": "false",
     "license": "unknown"
 }`;
                 var zip = new JSZip();
