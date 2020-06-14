@@ -1,4 +1,5 @@
 const splitRegex = /[^\S\r\n]*?\r?\n[^\S\r\n]*?\*[^\S\r\n]?/;
+const escapedAtRegex = /^\\@/;
 
 function testJSON(data) {
     try {
