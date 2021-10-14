@@ -65,14 +65,14 @@ function readTheme() {
             }
             var themeInfo = Object.keys(themeMeta);
             if (themeInfo.includes("name") || themeInfo.includes("author") || themeInfo.includes("version") || themeInfo.includes("description")) {
-                var powercordManifest = `{
-    "name": "${themeMeta['name'].trim()}",
-    "description": "${themeMeta['description'].trim()}",
-    "version": "${themeMeta['version'].trim()}",
-    "author": "${themeMeta['author'].trim()}",
-    "theme": "theme.css",
-    "license": "unknown"
-}`;
+                var powercordManifest = JSON.stringify({
+                  name: themeMeta["name"],
+                  description: themeMeta["description"],
+                  version: themeMeta["version"],
+                  author: themeMeta["author"],
+                  theme: "theme.css",
+                  license: "Unknown"
+                });
                 var zip = new JSZip();
                 zip.file(`${themeMeta['name']}/powercord_manifest.json`, powercordManifest);
                 zip.file(`${themeMeta['name']}/theme.css`, themeContent);
